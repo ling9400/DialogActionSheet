@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="8dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/action_sheet_normal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/izd_llActionTitle"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/izd_txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="13sp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:background="#d8d8d8"
+                android:layout_height="1px"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/izd_lvActionSheet"
+            android:layout_width="match_parent"
+            android:listSelector="@drawable/selector_listview"
+            android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/izd_txt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/actionsheet_single_selector"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textSize="16sp"
+        />
+
+</LinearLayout>
